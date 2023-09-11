@@ -273,8 +273,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
-            Développeur web dédié à l&apos;excellence et aux relations de
-            confiance !
+            Software designer, founder, and amateur astronaut.
           </h1>
           <p className="mt-6 text-base text-slate-600 dark:text-slate-400">
             I’m Spencer, a software designer and entrepreneur based in New York
