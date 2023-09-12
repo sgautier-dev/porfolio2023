@@ -46,7 +46,7 @@ export default function Contact() {
         />
         <input
           type="email"
-          placeholder="Email address"
+          placeholder="E-mail"
           aria-label="Email address"
           required
           className="form-input mb-4"

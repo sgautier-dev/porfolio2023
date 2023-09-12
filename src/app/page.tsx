@@ -241,7 +241,7 @@ export default async function Home() {
             l&apos;intérieur.
           </h1>
           <p className="mt-6 text-base text-slate-600 dark:text-slate-400">
-            Salut, je suis Sébastien. Basé à la Réunion, je développe des
+            Hello, je suis Sébastien. Basé à la Réunion, je développe des
             applications web, animé par la même passion qui me pousse à
             surmonter les défis en trail. Fondateur de Maison Kailash, mon
             expertise ne s&apos;arrête pas à l&apos;informatique : elle explore

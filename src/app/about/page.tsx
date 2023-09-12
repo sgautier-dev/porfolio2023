@@ -128,7 +128,7 @@ export default function About() {
             <SocialLink
               href="https://www.malt.fr/profile/sgautier"
               icon={MaltIcon}
-              className="mt-4"
+              className="mt-4 mb-6"
             >
               Suivez sur Malt
             </SocialLink>
