@@ -7,19 +7,18 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
-  InstagramIcon,
   LinkedInIcon,
-  TwitterIcon,
+  MaltIcon
 } from '@/components/SocialIcons'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image1 from '@/images/photos/seb-massage.jpeg'
+import image2 from '@/images/photos/seb-medite.jpg'
+import image3 from '@/images/photos/seb-laptop.jpg'
+import image4 from '@/images/photos/seb-trail.jpg'
+import image5 from '@/images/photos/seb-cuisine.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -273,34 +272,34 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Créateur d&apos;expériences web, entrepreneur et explorateur de
+            l&apos;intérieur.
           </h1>
           <p className="mt-6 text-base text-slate-600 dark:text-slate-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            Salut, je suis Sébastien. Basé à la Réunion, je crée des
+            applications web aussi robustes que les sentiers que j&apos;emprunte
+            en trail. Fondateur de Maison Kailash, mon expertise ne
+            s&apos;arrête pas à l&apos;informatique : elle explore aussi les
+            chemins du bien-être et de la sérénité. Pour moi, chaque projet est comme une
+            nouvelle aventure, nécessitant le même niveau de concentration et de
+            dédication qu&apos;une session de méditation ou un trail en
+            montagne.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
-              href="https://github.com"
+              href="https://github.com/sgautier-dev"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sebastien-gautier-55b38382"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
+            />
+            <SocialLink
+              href="https://www.malt.fr/profile/sgautier"
+              aria-label="Follow on Malt"
+              icon={MaltIcon}
             />
           </div>
         </div>
