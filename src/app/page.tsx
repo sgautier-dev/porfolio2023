@@ -5,15 +5,13 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  LinkedInIcon,
-  MaltIcon
-} from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import Contact from '@/components/Contact'
+import { GitHubIcon, LinkedInIcon, MaltIcon } from '@/components/SocialIcons'
+import logoKailash from '@/images/logos/kailash.jpg'
+import logoTemple from '@/images/logos/temple.png'
+import logoMorgabine from '@/images/logos/morgabine.jpeg'
+import logoRiso from '@/images/logos/riso.jpeg'
+import logoDev from '@/images/logos/nextjs.png'
 import image1 from '@/images/photos/seb-massage.jpeg'
 import image2 from '@/images/photos/seb-medite.jpg'
 import image3 from '@/images/photos/seb-laptop.jpg'
@@ -21,29 +19,6 @@ import image4 from '@/images/photos/seb-trail.jpg'
 import image5 from '@/images/photos/seb-cuisine.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
-
-function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-        className="fill-slate-100 stroke-slate-400 dark:fill-slate-100/10 dark:stroke-slate-500"
-      />
-      <path
-        d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
-        className="stroke-slate-400 dark:stroke-slate-500"
-      />
-    </svg>
-  )
-}
 
 function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -109,35 +84,6 @@ function SocialLink({
   )
 }
 
-function Newsletter() {
-  return (
-    <form
-      action="/thank-you"
-      className="rounded-2xl border border-slate-100 p-6 dark:border-slate-700/40"
-    >
-      <h2 className="flex text-sm font-semibold text-slate-900 dark:text-slate-100">
-        <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay up to date</span>
-      </h2>
-      <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
-        Get notified when I publish something new, and unsubscribe at any time.
-      </p>
-      <div className="mt-6 flex">
-        <input
-          type="email"
-          placeholder="Email address"
-          aria-label="Email address"
-          required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-slate-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-slate-800/5 placeholder:text-slate-400 focus:border-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-500/10 dark:border-slate-700 dark:bg-slate-700/[0.15] dark:text-slate-200 dark:placeholder:text-slate-500 dark:focus:border-orange-400 dark:focus:ring-orange-400/10 sm:text-sm"
-        />
-        <Button type="submit" className="ml-4 flex-none">
-          Join
-        </Button>
-      </div>
-    </form>
-  )
-}
-
 interface Role {
   company: string
   title: string
@@ -158,7 +104,12 @@ function Role({ role }: { role: Role }) {
   return (
     <li className="flex gap-4">
       <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+        <Image
+          src={role.logo}
+          alt=""
+          className="h-7 w-7 rounded-full"
+          unoptimized
+        />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
@@ -186,35 +137,45 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'Freelance',
+      title: 'Dev Web Fullstack',
+      logo: logoDev,
+      start: '2023',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
+      company: 'Groupe Morgabine Hospitality',
+      title: 'Dev Wordpress',
+      logo: logoMorgabine,
+      start: '2021',
+      end: '2022',
+    },
+    {
+      company: 'Maison Kailash',
+      title: 'Gérant/praticien',
+      logo: logoKailash,
       start: '2014',
-      end: '2019',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear().toString(),
+      },
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
+      company: 'Temples et Monastères',
+      title: 'Résident',
+      logo: logoTemple,
       start: '2008',
       end: '2011',
+    },
+    {
+      company: 'Riso France',
+      title: 'Responsable BI',
+      logo: logoRiso,
+      start: '2003',
+      end: '2006',
     },
   ]
 
@@ -222,15 +183,19 @@ function Resume() {
     <div className="rounded-2xl border border-slate-100 p-6 dark:border-slate-700/40">
       <h2 className="flex text-sm font-semibold text-slate-900 dark:text-slate-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Expériences</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
+      <Button
+        href="/CV-SGAUTIER-092023.pdf"
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
+        Voir mon CV
         <ArrowDownIcon className="h-4 w-4 stroke-slate-400 transition group-active:stroke-slate-600 dark:group-hover:stroke-slate-50 dark:group-active:stroke-slate-50" />
       </Button>
     </div>
@@ -276,14 +241,14 @@ export default async function Home() {
             l&apos;intérieur.
           </h1>
           <p className="mt-6 text-base text-slate-600 dark:text-slate-400">
-            Salut, je suis Sébastien. Basé à la Réunion, je crée des
-            applications web aussi robustes que les sentiers que j&apos;emprunte
-            en trail. Fondateur de Maison Kailash, mon expertise ne
-            s&apos;arrête pas à l&apos;informatique : elle explore aussi les
-            chemins du bien-être et de la sérénité. Pour moi, chaque projet est comme une
-            nouvelle aventure, nécessitant le même niveau de concentration et de
-            dédication qu&apos;une session de méditation ou un trail en
-            montagne.
+            Salut, je suis Sébastien. Basé à la Réunion, je développe des
+            applications web, animé par la même passion qui me pousse à
+            surmonter les défis en trail. Fondateur de Maison Kailash, mon
+            expertise ne s&apos;arrête pas à l&apos;informatique : elle explore
+            aussi les chemins du bien-être et de la sérénité. Pour moi, chaque
+            projet est comme une nouvelle aventure, nécessitant le même niveau
+            de concentration et de dédication qu&apos;une session de méditation
+            ou un trail en montagne.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -313,7 +278,7 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            <Contact />
             <Resume />
           </div>
         </div>

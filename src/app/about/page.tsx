@@ -4,12 +4,8 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  TwitterIcon,
-} from '@/components/SocialIcons'
+import Contact from '@/components/Contact'
+import { GitHubIcon, LinkedInIcon, MaltIcon } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
 function SocialLink({
@@ -27,23 +23,13 @@ function SocialLink({
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
+        target="_blank"
         className="group flex text-sm font-medium text-slate-800 transition hover:text-orange-500 dark:text-slate-200 dark:hover:text-orange-500"
       >
         <Icon className="h-6 w-6 flex-none fill-slate-500 transition group-hover:fill-orange-500" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
-  )
-}
-
-function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
-      />
-    </svg>
   )
 }
 
@@ -69,60 +55,85 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
-            I’m Sébastien Gautier. I live in New York City, where I design the
-            future.
+            Je suis Sébastien Gautier. Je vis à l&apos;île de la Réunion, où je
+            contribue à l&apos;évolution du web.
           </h1>
           <div className="mt-6 space-y-7 text-base text-slate-600 dark:text-slate-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              Mes études à l&apos;INSA Lyon ont posé les fondations techniques
+              qui me permettent aujourd&apos;hui d&apos;exceller dans le
+              développement web. Cependant, c&apos;est en explorant
+              d&apos;autres univers, tant extérieurs qu&apos;intérieurs, que
+              j&apos;ai vraiment trouvé ma voie. Mon voyage initiatique en Asie
+              et en Océanie m&apos;a conduit à me plonger dans la méditation,
+              l&apos;exploration de soi et, finalement, à redécouvrir avec
+              passion le monde fascinant de la technologie.
             </p>
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              Parmi les moments les plus marquants de mes voyages figure la
+              période passée en tant que responsable de cuisine dans un
+              monastère Zen. Loin d&apos;être une retraite paisible,
+              c&apos;était un terrain intense d&apos;apprentissage et de remise
+              en question, orchestré par un maître Zen dont l&apos;art est de
+              nous confronter à nous-mêmes. Cette expérience m&apos;a propulsé
+              au-delà de mes limites, jusqu&apos;à un point de rupture
+              nécessaire pour une renaissance spirituelle et personnelle.
             </p>
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
+              Cette expérience transformative m&apos;a doté de qualités
+              cruciales que j&apos;applique dans mon travail aujourd&apos;hui :
+              une résilience inébranlable, une grande capacité à résoudre des
+              problèmes sous pression, et une aptitude à maintenir une vision
+              claire même dans des contextes complexes. Ce sont ces mêmes
+              qualités qui me permettent de développer des applications web
+              robustes et performantes, qui résistent aux défis du monde
+              numérique en constante évolution.
             </p>
             <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+              De retour à la Réunion, j&apos;ai fondé Maison Kailash, un centre
+              de bien-être, avant de plonger de nouveau dans le monde de la
+              tech. Spécialisé en Next.js 13, TypeScript, et TailwindCSS, je
+              crée des applications aussi robustes et performantes que je le
+              suis moi-même sur les sentiers de trail ou le coussin de
+              méditation.
+            </p>
+            <p>
+              L&apos;aspect humain est au cœur de ma démarche professionnelle.
+              Pour moi, une relation de travail réussie repose avant tout sur la
+              confiance mutuelle, l&apos;écoute et le respect des engagements.
+            </p>
+            <p>
+              Vous cherchez un développeur web qui comprend vos besoins, qui
+              s&apos;engage pleinement dans vos projets et qui apporte une
+              touche unique ? Vous êtes au bon endroit.
             </p>
           </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={TwitterIcon}>
-              Follow on Twitter
-            </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-              Follow on Instagram
-            </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
-              Follow on GitHub
-            </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
-              Follow on LinkedIn
+            <SocialLink
+              href="https://github.com/sgautier-dev"
+              icon={GitHubIcon}
+              className="mt-4"
+            >
+              Suivez sur GitHub
             </SocialLink>
             <SocialLink
-              href="mailto:spencer@planetaria.tech"
-              icon={MailIcon}
-              className="mt-8 border-t border-slate-100 pt-8 dark:border-slate-700/40"
+              href="https://www.linkedin.com/in/sebastien-gautier-55b38382"
+              icon={LinkedInIcon}
+              className="mt-4"
             >
-              spencer@planetaria.tech
+              Suivez sur LinkedIn
+            </SocialLink>
+            <SocialLink
+              href="https://www.malt.fr/profile/sgautier"
+              icon={MaltIcon}
+              className="mt-4"
+            >
+              Suivez sur Malt
             </SocialLink>
           </ul>
+          <Contact />
         </div>
       </div>
     </Container>
