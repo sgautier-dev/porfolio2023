@@ -35,65 +35,55 @@ function Tool({
 }
 
 export const metadata = {
-  title: 'Uses',
-  description: 'Software I use, gadgets I love, and other things I recommend.',
+  title: 'Tech',
+  description: 'Les technologies et outils au coeur de ma créativité web.',
 }
 
 export default function Uses() {
   return (
     <SimpleLayout
-      title="Software I use, gadgets I love, and other things I recommend."
-      intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+      title="Les technologies et outils au coeur de ma créativité web."
+      intro="Je m'appuie sur un ensemble d'outils et de technologies pour concevoir des solutions web de qualité. Si vous êtes basé à la Réunion, sachez que vos projets peuvent bénéficier d'un financement grâce à Kap Numérik. Découvrez ci-dessous les ressources que j'utilise pour créer des sites et des applications qui répondent aux besoins spécifiques de mes clients."
     >
       <div className="space-y-20">
-        <ToolsSection title="Workstation">
-          <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
-            I was using an Intel-based 16” MacBook Pro prior to this and the
-            difference is night and day. I’ve never heard the fans turn on a
-            single time, even under the incredibly heavy loads I put it through
-            with our various launch simulations.
+        <ToolsSection title="Station de travail">
+          <Tool title="16” MacBook Pro, Intel, 16GB RAM (2019)">
+            C&apos;est ma station de travail de confiance. Solide et fiable,
+            elle m&apos;accompagne dans chaque projet web que je développe. Que
+            ce soit pour des simulations de lancement, des tests de performance
+            ou tout simplement du développement au quotidien, elle ne me fait
+            jamais défaut.
           </Tool>
-          <Tool title="Apple Pro Display XDR (Standard Glass)">
-            The only display on the market if you want something HiDPI and
-            bigger than 27”. When you’re working at planetary scale, every pixel
-            you can get counts.
+          <Tool title="Écran Prolite IIyama 27” Full HD">
+            Un ajout essentiel à ma station de travail, cet écran me donne
+            l&apos;espace nécessaire pour organiser mes fenêtres de code,
+            navigateurs, et autres outils de développement. Une vraie différence
+            en termes de productivité et de confort.
           </Tool>
-          <Tool title="IBM Model M SSK Industrial Keyboard">
-            They don’t make keyboards the way they used to. I buy these any time
-            I see them go up for sale and keep them in storage in case I need
-            parts or need to retire my main.
-          </Tool>
-          <Tool title="Apple Magic Trackpad">
-            Something about all the gestures makes me feel like a wizard with
-            special powers. I really like feeling like a wizard with special
-            powers.
-          </Tool>
-          <Tool title="Herman Miller Aeron Chair">
-            If I’m going to slouch in the worst ergonomic position imaginable
-            all day, I might as well do it in an expensive chair.
+          <Tool title="Magic Mouse d'Apple">
+            Avec cette souris, je me sens comme un véritable magicien du web !
+            Pointage précis, défilement fluide, et un design si élégant
+            qu&apos;on pourrait le qualifier de magique.
           </Tool>
         </ToolsSection>
-        <ToolsSection title="Development tools">
-          <Tool title="Sublime Text 4">
-            I don’t care if it’s missing all of the fancy IDE features everyone
-            else relies on, Sublime Text is still the best text editor ever
-            made.
+        <ToolsSection title="Outils de développement">
+          <Tool title="Visual Studio Code">
+            Mon environnement de développement favori, un outil indispensable.
+            Léger, personnalisable et extrêmement puissant, VS Code est la
+            baguette magique de tout développeur web moderne.
           </Tool>
-          <Tool title="iTerm2">
-            I’m honestly not even sure what features I get with this that aren’t
-            just part of the macOS Terminal but it’s what I use.
-          </Tool>
-          <Tool title="TablePlus">
-            Great software for working with databases. Has saved me from
-            building about a thousand admin interfaces for my various projects
-            over the years.
+          <Tool title="Git">
+            Git est un incontournable pour le contrôle de version. Il me permet
+            de gérer l&apos;évolution de mes projets et de collaborer aisément
+            avec d&apos;autres développeurs. Un filet de sécurité pour la
+            créativité et l&apos;organisation.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Design">
           <Tool title="Figma">
-            We started using Figma as just a design tool but now it’s become our
-            virtual whiteboard for the entire company. Never would have expected
-            the collaboration features to be the real hook.
+            Figma est mon choix pour le design d&apos;interface et la prototypage. Sa
+            simplicité et sa flexibilité favorisent une collaboration fluide
+            avec les clients et les équipes de design.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Productivity">

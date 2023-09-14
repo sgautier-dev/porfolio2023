@@ -30,7 +30,7 @@ export function Footer() {
                 <NavLink href="/about">Bio</NavLink>
                 <NavLink href="/projects">Projets</NavLink>
                 <NavLink href="/speaking">Speaking</NavLink>
-                <NavLink href="/uses">Uses</NavLink>
+                <NavLink href="/uses">Tech</NavLink>
               </div>
               <p className="text-sm text-slate-400 dark:text-slate-500">
                 &copy; {new Date().getFullYear()} Sébastien Gautier. All rights
