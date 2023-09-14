@@ -34,9 +34,9 @@ function SocialLink({
 }
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'Bio',
   description:
-    'I’m Sébastien Gautier. I live in New York City, where I design the future.',
+    "Je suis Sébastien Gautier. Je vis à l'île de la Réunion, où je contribue à l'évolution du web.",
 }
 
 export default function About() {
@@ -94,8 +94,7 @@ export default function About() {
               de bien-être, avant de plonger de nouveau dans le monde de la
               tech. Spécialisé en Next.js 13, TypeScript, et TailwindCSS, je
               crée des applications aussi robustes et performantes que je le
-              suis moi-même sur les sentiers de trail ou le coussin de
-              méditation.
+              suis moi-même sur les sentiers de trail.
             </p>
             <p>
               L&apos;aspect humain est au cœur de ma démarche professionnelle.
@@ -116,21 +115,21 @@ export default function About() {
               icon={GitHubIcon}
               className="mt-4"
             >
-              Suivez sur GitHub
+              Suivez-moi sur GitHub
             </SocialLink>
             <SocialLink
               href="https://www.linkedin.com/in/sebastien-gautier-55b38382"
               icon={LinkedInIcon}
               className="mt-4"
             >
-              Suivez sur LinkedIn
+              Suivez-moi sur LinkedIn
             </SocialLink>
             <SocialLink
               href="https://www.malt.fr/profile/sgautier"
               icon={MaltIcon}
-              className="mt-4 mb-6"
+              className="mb-6 mt-4"
             >
-              Suivez sur Malt
+              Suivez-moi sur Malt
             </SocialLink>
           </ul>
           <Contact />

@@ -165,7 +165,7 @@ function Resume() {
     },
     {
       company: 'Temples et Monastères',
-      title: 'Résident',
+      title: 'Cuisine',
       logo: logoTemple,
       start: '2008',
       end: '2011',

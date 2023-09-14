@@ -3,47 +3,53 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoLfit from '@/images/logos/lfit.png'
+import logoDataCol from '@/images/logos/datacollector.png'
+import logoJulie from '@/images/logos/julie.png'
+import logoGrouponet from '@/images/logos/grouponet.png'
+import logoHolistis from '@/images/logos/holistis.png'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Holistis',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'Holistis est une plateforme de coaching en Next.js, Tailwind et TypeScript. Le backend utilise Sanity.io. Automatisation des newsletters MailChimp via Webhook lors de la publication de nouveaux articles.',
+    link: { href: 'https://www.holistis.net/', label: 'holistis.net' },
+    logo: logoHolistis,
   },
   {
-    name: 'Animaginary',
+    name: 'L.FIT',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Site de coaching sportif en Next.js, Tailwind et TypeScript. Gestion de contenu via Sanity.io. Inclu une section membres sécurisée avec Clerk et paiement via Stripe pour accès premium.',
+    link: { href: 'https://www.lfit.pro/', label: 'lfit.pro' },
+    logo: logoLfit,
   },
   {
-    name: 'HelioStream',
+    name: 'Julie Gautier',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'Portfolio artistique de Julie Gautier, spécialisée en art et vidéo aquatique. Développé en Next.js 13, TailwindCSS et TypeScript, avec un backend sur Sanity.io. Score de performance supérieur à 97% sur Lighthouse.',
+    link: { href: 'https://www.juliegautier.me/', label: 'juliegautier.me' },
+    logo: logoJulie,
   },
   {
-    name: 'cosmOS',
+    name: 'Data Collector',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+      'Formulaire client pour Data Chaman, codé en Next.js 13, Tailwind et TypeScript. Le backend utilise MongoDB et Prisma pour des opérations sécurisées. Conçu pour collecter et stocker de manière sécurisée des informations clients.',
+    link: {
+      href: 'https://github.com/sgautier-dev/data-collector',
+      label: 'github.com',
+    },
+    logo: logoDataCol,
   },
   {
-    name: 'OpenShuttle',
+    name: 'GroupoNet',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      "Réseau social d'entreprise en MERN (MongoDB Express React et Node). Auth sécurisée, sessions persistantes. Redux et RTK Query pour état et data. Accès par rôle, posts, et systèmes de likes.",
+    link: {
+      href: 'https://github.com/sgautier-dev/P7_Groupomania_SocialNet',
+      label: 'github.com',
+    },
+    logo: logoGrouponet,
   },
 ]
 
@@ -59,15 +65,15 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export const metadata: Metadata = {
-  title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  title: 'Projets',
+  description: 'Mes derniers projets.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Mes derniers projets."
+      intro="Depuis mon retour au développement web, j'ai consacré mon énergie à créer des applications robustes et performantes pour mes clients. Chaque projet est le reflet de mon engagement envers l'excellence technique, la performance et la sécurité."
     >
       <ul
         role="list"
@@ -84,7 +90,7 @@ export default function Projects() {
               />
             </div>
             <h2 className="mt-6 text-base font-semibold text-slate-800 dark:text-slate-100">
-              <Card.Link href={project.link.href}>{project.name}</Card.Link>
+              <Card.Link href={project.link.href} target="_blank">{project.name}</Card.Link>
             </h2>
             <Card.Description>{project.description}</Card.Description>
             <p className="relative z-10 mt-6 flex text-sm font-medium text-slate-400 transition group-hover:text-orange-500 dark:text-slate-200">
