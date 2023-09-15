@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { ContainerInner, ContainerOuter } from '@/components/Container'
+import { navigation } from '@/lib/navigation'
 
 function NavLink({
   href,
@@ -27,10 +28,11 @@ export function Footer() {
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-slate-800 dark:text-slate-200">
-                <NavLink href="/about">Bio</NavLink>
-                <NavLink href="/projects">Projets</NavLink>
-                <NavLink href="/speaking">Speaking</NavLink>
-                <NavLink href="/uses">Tech</NavLink>
+                {navigation.map((item) => (
+                  <NavLink key={item.name} href={item.href}>
+                    {item.name}
+                  </NavLink>
+                ))}
               </div>
               <p className="text-sm text-slate-400 dark:text-slate-500">
                 &copy; {new Date().getFullYear()} Sébastien Gautier. All rights
