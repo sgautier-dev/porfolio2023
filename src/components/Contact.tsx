@@ -30,7 +30,7 @@ export default function Contact() {
     >
       <h2 className="flex text-sm font-semibold text-slate-900 dark:text-slate-100">
         <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Restons en contact</span>
+        <span className="ml-3">Parlons de votre projet</span>
       </h2>
       <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
         Envie d&apos;un site web performant ou curieux de la méditation ?
