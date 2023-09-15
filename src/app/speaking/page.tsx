@@ -53,7 +53,7 @@ export const metadata: Metadata = {
 export default function Speaking() {
   return (
     <SimpleLayout
-      title="Témoignages de réussite"
+      title="Témoignages de réussite."
       intro="Au-delà des technologies de pointe et des solutions sur mesure que je propose, ce qui distingue véritablement mes collaborations, ce sont mes compétences humaines. L'écoute active, l'engagement et la flexibilité sont autant de qualités que j'apporte à chaque projet. Découvrez ici les témoignages de clients qui ont été particulièrement séduits par cette approche intégrale, où la technique et l'humain vont de pair."
     >
       <div className="space-y-20">
