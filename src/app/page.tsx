@@ -66,7 +66,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
         {formatDate(article.date)}
       </Card.Eyebrow>
       <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
+      <Card.Cta>Lire l&apos;article</Card.Cta>
     </Card>
   )
 }
@@ -241,7 +241,7 @@ export default async function Home() {
             l&apos;intérieur.
           </h1>
           <p className="mt-6 text-base text-slate-600 dark:text-slate-400">
-            Hello, je suis Sébastien. Basé à la Réunion, je développe des
+            Salut, je suis Sébastien. Basé à la Réunion, je développe des
             applications web, animé par la même passion qui me pousse à
             surmonter les défis en trail. Fondateur de Maison Kailash, mon
             expertise ne s&apos;arrête pas à l&apos;informatique : elle explore
