@@ -128,7 +128,7 @@ function MobileNavigation(
                 <CloseIcon className="h-6 w-6 text-slate-500 dark:text-slate-400" />
               </Popover.Button>
               <h2 className="text-sm font-medium text-slate-600 dark:text-slate-400">
-                Navigation
+                Menu
               </h2>
             </div>
             <nav className="mt-6">
