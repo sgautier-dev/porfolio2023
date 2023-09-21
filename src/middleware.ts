@@ -3,7 +3,7 @@ import rateLimit from "express-rate-limit";
 
 const allowedOrigins =
 	process.env.NODE_ENV === "production"
-		? ["https://portfolio2023-sgautier-dev.vercel.app"]
+		? ["https://sgautier.dev", "https://www.sgautier.dev"]
 		: ["http://localhost:3000"];
 
 const getKey = (req: Request) => {
