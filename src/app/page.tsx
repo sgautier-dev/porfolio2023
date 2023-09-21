@@ -194,6 +194,7 @@ function Resume() {
         href="/CV-SGAUTIER-092023.pdf"
         variant="secondary"
         target="_blank"
+        prefetch={false}
         className="group mt-6 w-full"
       >
         Voir mon CV
