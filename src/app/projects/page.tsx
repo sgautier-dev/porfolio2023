@@ -66,14 +66,14 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projets',
-  description: 'Mes derniers projets.',
+  description: 'Mes derniers projets web.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
       title="Mes derniers projets."
-      intro="Depuis mon retour au développement web, j'ai consacré mon énergie à créer des applications robustes et performantes pour mes clients. Chaque projet est le reflet de mon engagement envers l'excellence technique, la performance et la sécurité."
+      intro="En tant que développeur web à La Réunion, chaque projet est une manifestation de mon engagement pour l'excellence technique, la performance fiable et la sécurité robuste. Alliant compétence en codage et sensibilité humaine, je m'efforce de créer des solutions qui résistent aux défis du monde numérique en constante évolution."
     >
       <ul
         role="list"
@@ -90,7 +90,9 @@ export default function Projects() {
               />
             </div>
             <h2 className="mt-6 text-base font-semibold text-slate-800 dark:text-slate-100">
-              <Card.Link href={project.link.href} target="_blank">{project.name}</Card.Link>
+              <Card.Link href={project.link.href} target="_blank">
+                {project.name}
+              </Card.Link>
             </h2>
             <Card.Description>{project.description}</Card.Description>
             <p className="relative z-10 mt-6 flex text-sm font-medium text-slate-400 transition group-hover:text-orange-500 dark:text-slate-200">

@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   title: {
     template: '%s - Sébastien Gautier',
     default:
-      'Sébastien Gautier - Software designer, founder, and amateur astronaut',
+      'Développeur Web à la Réunion - Sébastien Gautier - Dev Fullstack, Trail et Bien-Être',
   },
   description:
-    'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+    'Rencontrez Sébastien Gautier, un développeur web spécialisé en Next.js 13, TypeScript et TailwindCSS à La Réunion. Il allie excellence technique et sensibilité humaine pour créer des applications web sécurisées, performantes et robustes.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

@@ -11,18 +11,18 @@ export async function GET(req: Request) {
 
   let author = {
     name: 'Sébastien Gautier',
-    email: 'spencer@planetaria.tech',
+    email: 'sgautier.dev@gmail.com',
   }
 
   let feed = new Feed({
     title: author.name,
-    description: 'Your blog description',
+    description: 'Réflexions sur le développement web, le bien-être, le trail et la vie moderne.',
     author,
     id: siteUrl,
     link: siteUrl,
     image: `${siteUrl}/favicon.ico`,
     favicon: `${siteUrl}/favicon.ico`,
-    copyright: `All rights reserved ${new Date().getFullYear()}`,
+    copyright: `Tous droits réservés ${new Date().getFullYear()}`,
     feedLinks: {
       rss2: `${siteUrl}/feed.xml`,
     },

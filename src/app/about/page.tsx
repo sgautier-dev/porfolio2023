@@ -36,7 +36,7 @@ function SocialLink({
 export const metadata: Metadata = {
   title: 'Bio',
   description:
-    "Je suis Sébastien Gautier. Je vis à l'île de la Réunion, où je contribue à l'évolution du web.",
+    "Je suis un développeur web basé à la Réunion, engagé dans l'évolution du web.",
 }
 
 export default function About() {
@@ -55,8 +55,8 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
-            Je suis Sébastien Gautier. Je vis à l&apos;île de la Réunion, où je
-            contribue à l&apos;évolution du web.
+            Je suis un développeur web basé à la Réunion, engagé dans
+            l&apos;évolution du web.
           </h1>
           <div className="mt-6 space-y-7 text-base text-slate-600 dark:text-slate-400">
             <p>
@@ -93,8 +93,8 @@ export default function About() {
               De retour à la Réunion, j&apos;ai fondé Maison Kailash, un centre
               de bien-être, avant de plonger de nouveau dans le monde de la
               tech. Spécialisé en Next.js 13, TypeScript, et TailwindCSS, je
-              crée des applications aussi robustes et performantes que je le
-              suis moi-même sur les sentiers de trail.
+              crée des applications aussi stables et agiles que je le suis
+              moi-même sur les sentiers de trail.
             </p>
             <p>
               L&apos;aspect humain est au cœur de ma démarche professionnelle.

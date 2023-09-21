@@ -47,7 +47,7 @@ const testimonials = [
 export const metadata: Metadata = {
   title: 'Références',
   description:
-    'I’ve spoken at events all around the world and been interviewed for many podcasts.',
+    'Témoignages clients.',
 }
 
 export default function Speaking() {

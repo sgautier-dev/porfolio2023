@@ -237,7 +237,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
-            Créateur d&apos;expériences web, entrepreneur et explorateur de
+            Développeur web fullstack, entrepreneur et explorateur de
             l&apos;intérieur.
           </h1>
           <p className="mt-6 text-base text-slate-600 dark:text-slate-400">
