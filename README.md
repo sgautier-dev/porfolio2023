@@ -1,42 +1,52 @@
-# Spotlight
+# SEBASTIEN GAUTIER PORFOLIO
 
-Spotlight is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+## Overview
 
-## Getting started
+This portfolio serves as a comprehensive showcase of my expertise in full-stack web development, utilizing a modern technical stack of Next.js 13, TypeScript, and TailwindCSS.
+Project is live at [https://www.sgautier.dev/]
 
-To get started with this template, first install the npm dependencies:
+## Requirements
 
-```bash
-npm install
-```
+### System Requirements
 
-Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` variable to your site's public URL:
+- Node.js: `18.x` or higher
+- npm: `9.x` or higher
 
-```
-NEXT_PUBLIC_SITE_URL=https://example.com
-```
+### Environment Variables
 
-Next, run the development server:
+Copy the `.env.example` file to a new files named `.env.local`.
 
-```bash
-npm run dev
-```
+## Tech Stack
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+- Node.js: 18.x
+- Frontend: Next.js 13.x App Router
+- TypeScript: 5.x
+- Backend: Next.js API routes
+- State Management: React 18.x
+- CSS: Tailwind CSS 3.x
+- Logging: Pino 8.x
+- MDX: next/mdx 13.x
+- Email: Nodemailer 6.x
 
-## Customizing
+## Setup and Installation
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+1. Clone the repository.
+2. Run `npm install`.
+3. Add your environments variables in `.env` and `.env.local`.
+
+## Usage
+
+After installation, run `npm run dev` and go to `http://localhost:3000`.
+
+## Contributing
+
+Please submit a pull request for any changes.
 
 ## License
 
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
+This project is the property of Sébastien Gautier. All rights are reserved. Based on a TailwindUI theme.
 
-## Learn more
+## Contact
 
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [MDX](https://mdxjs.com) - the MDX documentation
+For more information, contact sgautier.dev@gmail.com
+```
