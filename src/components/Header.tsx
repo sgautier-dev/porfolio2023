@@ -249,7 +249,7 @@ function Avatar({
     >
       <Image
         src={avatarImage}
-        alt=""
+        alt="Sébastien Gautier, développeur web basé à la Réunion"
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
           'rounded-full bg-slate-100 object-cover dark:bg-slate-800',

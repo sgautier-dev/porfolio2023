@@ -106,7 +106,7 @@ function Role({ role }: { role: Role }) {
       <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-800 dark:ring-0">
         <Image
           src={role.logo}
-          alt=""
+          alt="Sébastien Gautier, expériences"
           className="h-7 w-7 rounded-full"
           unoptimized
         />
@@ -193,6 +193,7 @@ function Resume() {
       <Button
         href="/CV-SGAUTIER-092023.pdf"
         variant="secondary"
+        target="_blank"
         className="group mt-6 w-full"
       >
         Voir mon CV
@@ -218,7 +219,8 @@ function Photos() {
           >
             <Image
               src={image}
-              alt=""
+              placeholder="blur"
+              alt="Sébastien Gautier, développeur web basé à la Réunion"
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
             />
@@ -237,8 +239,8 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
-            Développeur web fullstack, entrepreneur et explorateur de
-            l&apos;intérieur.
+            Développeur web fullstack, entrepreneur et explorateur de la
+            conscience.
           </h1>
           <p className="mt-6 text-base text-slate-600 dark:text-slate-400">
             Salut, je suis Sébastien. Basé à la Réunion, je développe des
@@ -254,16 +256,19 @@ export default async function Home() {
             <SocialLink
               href="https://github.com/sgautier-dev"
               aria-label="Follow on GitHub"
+              target="_blank"
               icon={GitHubIcon}
             />
             <SocialLink
               href="https://www.linkedin.com/in/sebastien-gautier-55b38382"
               aria-label="Follow on LinkedIn"
+              target="_blank"
               icon={LinkedInIcon}
             />
             <SocialLink
               href="https://www.malt.fr/profile/sgautier"
               aria-label="Follow on Malt"
+              target="_blank"
               icon={MaltIcon}
             />
           </div>

@@ -47,7 +47,8 @@ export default function About() {
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
               src={portraitImage}
-              alt=""
+              alt="Sébastien Gautier, développeur web basé à la Réunion"
+              placeholder="blur"
               sizes="(min-width: 1024px) 32rem, 20rem"
               className="aspect-square rotate-3 rounded-2xl bg-slate-100 object-cover dark:bg-slate-800"
             />

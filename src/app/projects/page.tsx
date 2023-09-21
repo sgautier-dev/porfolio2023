@@ -73,7 +73,7 @@ export default function Projects() {
   return (
     <SimpleLayout
       title="Mes derniers projets."
-      intro="En tant que développeur web à La Réunion, chaque projet est une manifestation de mon engagement pour l'excellence technique, la performance fiable et la sécurité robuste. Alliant compétence en codage et sensibilité humaine, je m'efforce de créer des solutions qui résistent aux défis du monde numérique en constante évolution."
+      intro="En tant que développeur web fullstack (compétent sur tous les aspects d'un projet web), chaque projet est une manifestation de mon engagement pour l'excellence technique, la performance fiable et la sécurité robuste. Alliant compétence en codage et sensibilité humaine, je m'efforce de créer des solutions qui résistent aux défis du monde numérique en constante évolution."
     >
       <ul
         role="list"
@@ -84,7 +84,8 @@ export default function Projects() {
             <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-800 dark:ring-0">
               <Image
                 src={project.logo}
-                alt=""
+                alt="Sébastien Gautier, mes projets"
+                placeholder="blur"
                 className="h-8 w-8"
                 unoptimized
               />

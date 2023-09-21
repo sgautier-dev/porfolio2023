@@ -18,6 +18,7 @@ export const metadata: Metadata = {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },
   },
+  authors: [{ name: 'Sébastien Gautier', url: 'https://www.sgautier.dev' }],
 }
 
 export default function RootLayout({

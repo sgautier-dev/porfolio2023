@@ -72,9 +72,10 @@ export default function Speaking() {
                     <Image
                       className="h-10 w-10 rounded-full bg-slate-50"
                       src={testimonial.author.imageUrl}
+                      placeholder="blur"
                       width={256}
                       height={250}
-                      alt=""
+                      alt="Sébastien Gautier, références clients"
                     />
                     <div>
                       <div className="font-semibold text-gray-900">

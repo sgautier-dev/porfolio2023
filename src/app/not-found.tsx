@@ -9,13 +9,13 @@ export default function NotFound() {
           404
         </p>
         <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
-          Page not found
+          Page introuvable
         </h1>
         <p className="mt-4 text-base text-slate-600 dark:text-slate-400">
-          Sorry, we couldn’t find the page you’re looking for.
+          Désolé, nous n&apos;avons pas trouvé la page que vous recherchez.
         </p>
         <Button href="/" variant="secondary" className="mt-4">
-          Go back home
+          Retour à l&apos;accueil
         </Button>
       </div>
     </Container>
