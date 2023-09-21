@@ -117,7 +117,7 @@ function Role({ role }: { role: Role }) {
           {role.company}
         </dd>
         <dt className="sr-only">Role</dt>
-        <dd className="text-xs text-slate-500 dark:text-slate-400">
+        <dd className="text-xs text-slate-500 dark:text-slate-300">
           {role.title}
         </dd>
         <dt className="sr-only">Date</dt>
@@ -242,7 +242,7 @@ export default async function Home() {
             Développeur web fullstack, entrepreneur et explorateur de la
             conscience.
           </h1>
-          <p className="mt-6 text-base text-slate-600 dark:text-slate-400">
+          <p className="mt-6 text-base text-slate-600 dark:text-slate-300">
             Salut, je suis Sébastien. Basé à la Réunion, je développe des
             applications web, animé par la même passion qui me pousse à
             surmonter les défis en trail. Fondateur de Maison Kailash, mon

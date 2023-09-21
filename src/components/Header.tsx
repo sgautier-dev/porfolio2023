@@ -125,9 +125,9 @@ function MobileNavigation(
           >
             <div className="flex flex-row-reverse items-center justify-between">
               <Popover.Button aria-label="Close menu" className="-m-1 p-1">
-                <CloseIcon className="h-6 w-6 text-slate-500 dark:text-slate-400" />
+                <CloseIcon className="h-6 w-6 text-slate-500 dark:text-slate-300" />
               </Popover.Button>
-              <h2 className="text-sm font-medium text-slate-600 dark:text-slate-400">
+              <h2 className="text-sm font-medium text-slate-600 dark:text-slate-300">
                 Menu
               </h2>
             </div>

@@ -59,7 +59,7 @@ export default function About() {
             Je suis un développeur web basé à la Réunion, engagé dans
             l&apos;évolution du web.
           </h1>
-          <div className="mt-6 space-y-7 text-base text-slate-600 dark:text-slate-400">
+          <div className="mt-6 space-y-7 text-base text-slate-600 dark:text-slate-300">
             <p>
               Mes études à l&apos;INSA Lyon ont posé les fondations techniques
               qui me permettent aujourd&apos;hui d&apos;exceller dans le

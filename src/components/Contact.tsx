@@ -131,7 +131,7 @@ export default function Contact() {
         <MailIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Parlons de votre projet</span>
       </h2>
-      <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+      <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
         Envie d&apos;un site web performant ou curieux de la méditation ?
         Laissez-moi un message. Réponse rapide garantie !
       </p>

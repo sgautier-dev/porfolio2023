@@ -64,7 +64,7 @@ export default function Speaking() {
                 key={testimonial.author.handle}
                 className="pt-8 sm:inline-block sm:w-full sm:px-4"
               >
-                <figure className="rounded-2xl bg-slate-50 p-8 text-sm leading-6">
+                <figure className="rounded-2xl bg-slate-50 dark:bg-slate-300 p-8 text-sm leading-6">
                   <blockquote className="text-gray-900">
                     <p>{`“${testimonial.body}”`}</p>
                   </blockquote>

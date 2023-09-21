@@ -11,7 +11,7 @@ export default function NotFound() {
         <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
           Page introuvable
         </h1>
-        <p className="mt-4 text-base text-slate-600 dark:text-slate-400">
+        <p className="mt-4 text-base text-slate-600 dark:text-slate-300">
           Désolé, nous n&apos;avons pas trouvé la page que vous recherchez.
         </p>
         <Button href="/" variant="secondary" className="mt-4">
