@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sgautier.dev
+
+# Sitemaps
+Sitemap: https://sgautier.dev/sitemap.xml
