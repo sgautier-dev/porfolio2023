@@ -73,7 +73,7 @@ export default function Projects() {
   return (
     <SimpleLayout
       title="Mes derniers projets."
-      intro="En tant que développeur web fullstack (compétent sur tous les aspects d'un projet web), chaque projet est une manifestation de mon engagement pour l'excellence technique, la performance fiable et la sécurité robuste. Alliant compétence en codage et sensibilité humaine, je m'efforce de créer des solutions qui résistent aux défis du monde numérique en constante évolution."
+      intro="En tant que développeur web fullstack (compétent sur tous les aspects d'un projet web), chaque projet est une manifestation de mon engagement pour l'excellence technique, la performance et la sécurité. Alliant compétence en codage et sensibilité humaine, je m'efforce de créer des solutions qui résistent aux défis du monde numérique en constante évolution."
     >
       <ul
         role="list"
