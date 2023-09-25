@@ -354,7 +354,7 @@ export default function Uses() {
           </Tool>
         </ToolsSection>
         <ToolsSection title="Stack">
-          <Tool title="Next.js 13" icon={<NextIcon />}>
+          <Tool title="Next.js" icon={<NextIcon />}>
             Mon choix de prédilection pour le développement d&apos;applications
             web modernes. La puissance de ce framework réside dans sa
             flexibilité et ses performances inégalées, notamment avec

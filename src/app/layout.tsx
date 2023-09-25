@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   title: {
     template: '%s - Sébastien Gautier',
     default:
-      'Développeur Web à la Réunion - Sébastien Gautier - Fullstack, Trail et Bien-Être',
+      'Développeur Web à la Réunion - Sébastien Gautier - Fullstack, Trail et Méditation',
   },
   description:
-    'Rencontrez Sébastien Gautier, un développeur web fullstack spécialisé en Next.js 13, TypeScript et TailwindCSS à la Réunion. Il allie excellence technique et sensibilité humaine pour créer des sites et applications web sécurisées, performantes et robustes.',
+    'Sébastien Gautier, développeur web à la Réunion. Méditant expérimenté, je crée des sites et applications web modernes et performantes. Expertise humaine et technique à votre service.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

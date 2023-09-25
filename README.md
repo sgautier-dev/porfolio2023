@@ -2,7 +2,7 @@
 
 ## Overview
 
-This portfolio serves as a comprehensive showcase of my expertise in full-stack web development, utilizing a modern technical stack of Next.js 13, TypeScript, and TailwindCSS.
+This portfolio serves as a comprehensive showcase of my expertise in full-stack web development, utilizing a modern technical stack of Next.js, TypeScript, and TailwindCSS.
 Project is live at [https://www.sgautier.dev/]
 
 ## Requirements

@@ -240,18 +240,18 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
-            Développeur web fullstack, entrepreneur et explorateur de la
-            conscience.
+            Développeur web fullstack, entrepreneur et méditant expérimenté.
           </h1>
           <p className="mt-6 text-base text-slate-600 dark:text-slate-300">
-            Salut, je suis Sébastien. Basé à la Réunion, je développe des
-            applications web, animé par la même passion qui me pousse à
-            surmonter les défis en trail. Fondateur de Maison Kailash, mon
-            expertise ne s&apos;arrête pas à l&apos;informatique : elle explore
-            aussi les chemins du bien-être et de la sérénité. Pour moi, chaque
-            projet est comme une nouvelle aventure, nécessitant le même niveau
-            de concentration et de dédication qu&apos;une session de méditation
-            ou un trail en montagne.
+            Bonjour, je suis Sébastien, développeur web à la Réunion. Expert en
+            développement de sites et applications web modernes et performantes,
+            je suis aussi un trailer passionné et un méditant expérimenté.
+            Fondateur de Maison Kailash, mon expertise va au-delà de
+            l&apos;informatique pour englober le bien-être et la méditation, des
+            domaines que j&apos;explore depuis 25 ans. Chaque projet pour moi est une
+            nouvelle aventure, abordée avec rigueur, curiosité et un désir
+            constant de dépassement. Si vous cherchez une expertise authentique
+            et polyvalente, vous avez trouvé votre prestataire idéal.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

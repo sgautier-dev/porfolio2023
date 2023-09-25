@@ -93,7 +93,7 @@ export default function About() {
             <p>
               De retour à la Réunion, j&apos;ai fondé Maison Kailash, un centre
               de bien-être, avant de plonger de nouveau dans le monde de la
-              tech. Spécialisé en Next.js 13, TypeScript, et TailwindCSS, je
+              tech. Spécialisé en Next.js, TypeScript, et TailwindCSS, je
               crée des applications aussi stables et agiles que je le suis
               moi-même sur les sentiers de trail.
             </p>
