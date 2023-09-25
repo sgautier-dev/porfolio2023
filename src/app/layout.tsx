@@ -12,7 +12,7 @@ export const metadata: Metadata = {
       'Développeur Web à la Réunion - Sébastien Gautier - Fullstack, Trail et Méditation',
   },
   description:
-    'Sébastien Gautier, développeur web à la Réunion. Méditant expérimenté, je crée des sites et applications web modernes et performantes. Expertise humaine et technique à votre service.',
+    'Sébastien Gautier, développeur web à la Réunion. Spécialisé fullstack, je crée des sites et applications web modernes et performantes. Méditant expérimenté, mon expertise allie technique et sensibilité humaine à votre service.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
