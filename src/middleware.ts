@@ -13,7 +13,7 @@ const getKey = (req: Request) => {
 const rateLimiter = rateLimit({
 	keyGenerator: getKey,
 	windowMs: 60 * 1000,
-	max: 3,
+	max: 10,
 });
 
 export async function middleware(request: Request) {
