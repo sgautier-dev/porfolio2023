@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     },
   },
   authors: [{ name: 'Sébastien Gautier', url: 'https://www.sgautier.dev' }],
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
 }
 
 export default function RootLayout({
