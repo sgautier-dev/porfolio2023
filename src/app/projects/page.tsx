@@ -8,8 +8,19 @@ import logoDataCol from '@/images/logos/datacollector.png'
 import logoJulie from '@/images/logos/julie.png'
 import logoGrouponet from '@/images/logos/grouponet.png'
 import logoHolistis from '@/images/logos/holistis.png'
+import logoDAF from '@/images/logos/daf974.png'
 
 const projects = [
+  {
+    name: 'DAF974',
+    description:
+      "Création d'une plateforme web moderne pour un service de direction externalisée, avec Calendly pour la réservation et Stripe pour les paiements. Conçu en Next.js et TailwindCSS pour une performance optimale.",
+    link: {
+      href: 'https://www.daf974.re',
+      label: 'daf974.re',
+    },
+    logo: logoDAF,
+  },
   {
     name: 'Holistis',
     description:
