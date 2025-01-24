@@ -6,11 +6,32 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import logoLfit from '@/images/logos/lfit.png'
 import logoDataCol from '@/images/logos/datacollector.png'
 import logoJulie from '@/images/logos/julie.png'
-import logoGrouponet from '@/images/logos/grouponet.png'
 import logoHolistis from '@/images/logos/holistis.png'
 import logoDAF from '@/images/logos/daf974.png'
+import logoADF from '@/images/logos/ADF.png'
+import logoPapangues from "@/images/logos/papangues.png"
 
 const projects = [
+  {
+    name: 'Aqua Dance Flow',
+    description:
+      "Site officiel de l'Aqua Dance Flow par Julie Gautier, combinant performance et design immersif. Développé en Next.js 15, TailwindCSS et TypeScript. Intègre l'API Eventbrite pour la gestion des événements et des webhooks pour la revalidation ISR.",
+    link: {
+      href: 'https://www.aquadanceflow.com',
+      label: 'aquadanceflow.com',
+    },
+    logo: logoADF,
+  },
+  {
+    name: 'Les Papangues',
+    description:
+      'Site vitrine pour un collège Montessori à La Réunion, développé en Next.js 15, TailwindCSS et TypeScript. Le design intègre une gestion dynamique des contenus, avec des performances optimisées et une approche responsive.',
+    link: {
+      href: 'https://www.lespapangues.com',
+      label: 'lespapangues.com',
+    },
+    logo: logoPapangues,
+  },
   {
     name: 'DAF974',
     description:
@@ -51,16 +72,6 @@ const projects = [
       label: 'github.com',
     },
     logo: logoDataCol,
-  },
-  {
-    name: 'GroupoNet',
-    description:
-      "Réseau social d'entreprise en MERN (MongoDB Express React et Node). Auth sécurisée, sessions persistantes. Redux et RTK Query pour état et data. Accès par rôle, posts, et systèmes de likes.",
-    link: {
-      href: 'https://github.com/sgautier-dev/P7_Groupomania_SocialNet',
-      label: 'github.com',
-    },
-    logo: logoGrouponet,
   },
 ]
 
